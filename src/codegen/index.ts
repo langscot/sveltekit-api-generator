@@ -27,14 +27,12 @@ function writeApiFunction(
             }
 
             output += `
-                ${
-                    route.jsDoc ||
-                    `/**
+                ${route.jsDoc ||
+                `/**
                      * ${route.method} ${route.path}
                      */`
                 }
-                async ${route.method}(init?: RequestInit): Promise<${
-                    route.returnType
+                async ${route.method}(init?: RequestInit): Promise<${route.returnType
                 }> {
                     return fetch(\`${url}\`, {
                         method: '${route.method}',
@@ -78,8 +76,6 @@ export default function generateApiClient(routes: RouteMap) {
             return [pathName, routes];
         })
     );
-
-    console.log(routes);
 
     // Create tree from the route map
     // The structure of this tree determines how the API client is generated
