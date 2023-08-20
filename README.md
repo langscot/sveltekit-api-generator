@@ -80,6 +80,10 @@ This project is still in the early stages of development. It is not yet ready fo
 
 The inspiration for this project came from my codebase increasingly relying on SvelteKit's API endpoints for fetching mostly JSON data. Similar to SvelteKit's `PageData` for `load` functions, I wanted "automatic" type safety for my API endpoints. In addition, as my codebase grows in size, I wanted to use Swagger UI to explore my API endpoints without manually defining an OpenAPI schema.
 
+### Why is this a Vite plugin?
+
+This project is a Vite plugin because it needs to be able to parse your SvelteKit API endpoints. Once an OpenAPI schema is generated, a Swagger UI is served - this is made possible by using the `configureServer` hook provided by the Vite Plugin API.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
