@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-sveltekit-api-generator",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Generates a Swagger UI and API client based on your SvelteKit API endpoints defined in +server.ts files",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -11,6 +11,9 @@
   },
   "keywords": [
     "vite-plugin", "sveltekit", "type-safety", "codegen", "swagger", "openapi"
+  ],
+  "files": [
+    "dist"
   ],
   "author": "exactstate",
   "license": "MIT",
