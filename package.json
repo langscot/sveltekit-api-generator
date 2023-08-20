@@ -1,0 +1,32 @@
+{
+  "name": "vite-plugin-sveltekit-api-codegen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "concurrently \"tsc -w\" \"nodemon test.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "@types/prettier": "^3.0.0",
+    "@types/swagger-ui-express": "^4.1.3",
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "prettier": "^3.0.2",
+    "swagger-ui-express": "^5.0.0",
+    "ts-morph": "^19.0.0",
+    "tsc": "^2.0.4",
+    "typeconv": "^2.3.1",
+    "vite": "^4.4.9"
+  }
+}
