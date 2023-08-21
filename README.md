@@ -118,12 +118,13 @@ A vite plugin is used to generate the OpenAPI schema and client library. The plu
 
     ```ts
     import { defineConfig } from 'vite';
-    import svelte from '@sveltejs/vite-plugin-svelte';
+    import { sveltekit } from '@sveltejs/kit/vite';
+    
     import sveltekitApiGenerator from 'vite-plugin-sveltekit-api-generator';
 
     // https://vitejs.dev/config/
     export default defineConfig({
-        plugins: [svelte(), sveltekitApiGenerator()],
+        plugins: [sveltekit(), sveltekitApiGenerator()],
     });
     ```
 
