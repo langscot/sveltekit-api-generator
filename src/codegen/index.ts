@@ -32,12 +32,18 @@ function writeApiFunction(
                      * ${route.method} ${route.path}
                      */`
                 }
-                async ${route.method}(init?: RequestInit): Promise<${route.returnType
-                }> {
-                    return fetch(\`${url}\`, {
-                        method: '${route.method}',
-                        ...init
-                    }).then(res => res.json())
+                async ${route.method}(init?: RequestInit, fetchFn?: any): Promise<${route.returnType}> {
+                    if (fetchFn) {
+                        return fetchFn(\`${url}\`, {
+                            method: '${route.method}',
+                            ...init
+                        }).then(res => res.json());
+                    } else {
+                        return fetch(\`${url}\`, {
+                            method: '${route.method}',
+                            ...init
+                        }).then(res => res.json());
+                    }
                 },
             `;
         } else if (key.startsWith("[") && key.endsWith("]")) {
