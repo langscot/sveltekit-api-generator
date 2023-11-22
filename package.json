@@ -1,36 +1,41 @@
 {
-  "name": "vite-plugin-sveltekit-api-generator",
-  "version": "0.1.2",
-  "description": "Generates a Swagger UI and API client based on your SvelteKit API endpoints defined in +server.ts files",
-  "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
-  "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "dev": "concurrently \"tsc -w\" \"nodemon test.js\""
-  },
-  "keywords": [
-    "vite-plugin", "sveltekit", "type-safety", "codegen", "swagger", "openapi"
-  ],
-  "files": [
-    "dist"
-  ],
-  "author": "exactstate",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.5.1",
-    "@types/prettier": "^3.0.0",
-    "@types/swagger-ui-express": "^4.1.3",
-    "concurrently": "^8.2.0",
-    "nodemon": "^3.0.1",
-    "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "prettier": "^3.0.2",
-    "swagger-ui-express": "^5.0.0",
-    "ts-morph": "^19.0.0",
-    "typeconv": "^2.3.1",
-    "vite": "^4.4.9"
-  }
+	"name": "vite-plugin-shauns-api-generator",
+	"version": "0.1.3",
+	"description": "Generates a Swagger UI and API client based on your SvelteKit API endpoints defined in +server.ts files",
+	"main": "dist/index.js",
+	"types": "dist/types/index.d.ts",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"dev": "concurrently \"tsc -w\" \"nodemon test.js\""
+	},
+	"keywords": [
+		"vite-plugin",
+		"sveltekit",
+		"type-safety",
+		"codegen",
+		"swagger",
+		"openapi"
+	],
+	"files": [
+		"dist"
+	],
+	"author": "exactstate",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^20.5.1",
+		"@types/prettier": "^3.0.0",
+		"@types/swagger-ui-express": "^4.1.3",
+		"concurrently": "^8.2.0",
+		"nodemon": "^3.0.1",
+		"typescript": "^5.1.6"
+	},
+	"dependencies": {
+		"express": "^4.18.2",
+		"prettier": "^3.0.2",
+		"swagger-ui-express": "^5.0.0",
+		"ts-morph": "^19.0.0",
+		"typeconv": "^2.3.1",
+		"vite": "^4.4.9"
+	}
 }
